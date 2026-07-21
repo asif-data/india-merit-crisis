@@ -72,9 +72,29 @@ Each row is a **publicly reported** incident, with a per-row `source` and a `dat
 | `coalition_then` | Ruling national coalition at the time |
 | `data_confidence`, `source` | Confidence flag and citation |
 
-> **📝 TODO (author):** add a short paragraph on your **collection process** — where the incidents
-> were sourced, the date window, and what counts as "major" (your inclusion criteria). This is the
-> part only you can write accurately.
+## How this dataset was built
+
+The 47 incidents were compiled from primary and reported sources — Supreme
+Court and High Court judgments, CBI/ED/SIT filings and official commission
+notifications, corroborated against national and regional press (The Hindu,
+Indian Express, Times of India, PTI, Deccan Herald, The Tribune, Newslaundry
+and others) — covering **January 2004 to June 2026**.
+
+An incident **qualifies** if a government exam for admission or recruitment was
+actually *held or scheduled* and then **cancelled, annulled, or forced into a
+re-test** because of a paper leak, court order, or malpractice (OMR tampering,
+impersonation, cash-for-jobs).
+
+**Eliminated** were:
+
+- leaks where an FIR was filed but the exam still stood (no cancellation);
+- routine postponements unrelated to integrity;
+- cases whose cancellation could not be independently confirmed.
+
+Because there is no central registry of cancelled exams, this is a curated
+record of *documented* cases, not an exhaustive census — coverage is thinnest
+for pre-2015 years and smaller states, and a few candidate-impact figures
+(flagged in the data) are contested.
 
 ---
 
@@ -112,8 +132,7 @@ government-job aspirants**. But each individual number has a boundary:
 
 ## License & attribution
 
-- **Author:** _TODO — your name / handle_
-- **Code:** suggested `MIT` · **Data:** suggested `CC BY 4.0` — _confirm and add `LICENSE`._
+- `MIT`
 - Per-incident sources are in the dataset's `source` column. If you reuse this, please cite the
   original reporting, not just this compilation.
 
